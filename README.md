@@ -5,14 +5,18 @@ A development task to roll out an API that takes car entry & exit timestamp as i
 
 ## How to use?
 
-Open up **postman** tool and POST the URL https://carparkfeecalc.azurewebsites.net/api/CalcRates?code=gk4jk28FxZCZoYpfWxXWEj4P9KrKSHT6beHVsDsM1zSpPa0W5An4Dw== with following payload in the body:
+Open up **postman** tool and POST the URL 
+
+https://carparkfeecalc.azurewebsites.net/api/CalcRates?code=gk4jk28FxZCZoYpfWxXWEj4P9KrKSHT6beHVsDsM1zSpPa0W5An4Dw== 
+
+with following payload in the body:
 
 **{
 	"startDT": "03/07/2020 23:00",
 	"endDT": "04/07/2020 15:00"
 }**
 
-Note that the date formate is **DD/MM/YYYY HH:MM**
+Date formate is DD/MM/YYYY HH:mm
 
 ![Alt text](/Docs/postman_call.png?raw=true "postman preview")
 
