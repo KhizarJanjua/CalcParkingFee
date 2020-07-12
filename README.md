@@ -16,7 +16,7 @@ with following payload in the body:
 	"endDT": "04/07/2020 15:00"
 }**
 
-Date formate is DD/MM/YYYY HH:mm
+Date format is DD/MM/YYYY HH:mm
 
 ![Alt text](/Docs/postman_call.png?raw=true "postman preview")
 
