@@ -37,7 +37,7 @@ C# code using VS 2019, deployed to Azure as Function App.
 
 Function level authentication is used.
 
-![Alt text](/Docs/InfoFlowDia.png?raw=true "Info Flow")
+![Alt text](/Docs/InfoFlowDiagrame.png?raw=true "Info Flow")
 
 
 ## Build status
