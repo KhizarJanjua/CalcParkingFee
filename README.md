@@ -1,12 +1,11 @@
 # Car Parking Fee Calc - Azure Function
 
 ## Motivation
-A development task to demonstrate how quickly we can roll out an API that takes car entry & exit timestamp, evaluate which package is applicable and calculate the parking fee. The scope was to build an API. The code is written in C# using VS 2019 for Azure Functions.
+A development task to roll out an API that takes car entry & exit timestamp as input and decide amoung various packages that which one is applicable to the user.
 
 ## How to use?
-**Option 1: Through Visual Studio 2019:** You can download the code and run in VS 2019. It should generate local URL that you can call directly from your browser or through postman tool.
 
-The calculator engine API expects following payload in the body:
+Open up **postman** tool and POST the URL https://carparkfeecalc.azurewebsites.net/api/CalcRates?code=gk4jk28FxZCZoYpfWxXWEj4P9KrKSHT6beHVsDsM1zSpPa0W5An4Dw== with following payload in the body:
 
 **{
 	"startDT": "03/07/2020 23:00",
@@ -15,16 +14,13 @@ The calculator engine API expects following payload in the body:
 
 Note that the date formate is **DD/MM/YYYY HH:MM**
 
-**Option 2: From Azure cloud:** 
-
-Alternatively, open up **postman tool** and POST the URL https://carparkfeecalc.azurewebsites.net/api/CalcRates?code=gk4jk28FxZCZoYpfWxXWEj4P9KrKSHT6beHVsDsM1zSpPa0W5An4Dw== 
-with above payload in the body.
-
 ![Alt text](/Docs/postman_call.png?raw=true "postman preview")
 
+## Debugging
+Download the code and run in local VS 2019 to debug.
 
 ## Features
-The main function **CalcRates** accepts start and end date and return the calculated fee as json.
+The main function **CalcRates** accepts start and end date and return the calculated fee as json:
 **{
     "name": "Standard Rate",
     "price": 20.0
@@ -37,14 +33,14 @@ C# code using VS 2019, deployed to Azure as Function App.
 
 Function level authentication is used.
 
-![Alt text](/Docs/InfoFlowDiagrame.png?raw=true "Info Flow")
+## Screenshots
 
+![Alt text](/Docs/localURLs.png?raw=true "Local VS2019 enviorement URLs")
+![Alt text](/Docs/postman_local_call.png?raw=true "Local postman call")
+![Alt text](/Docs/solution_preview.png?raw=true "Local VS2019 solution preview")
 
 ## Build status
 Version 1.0.1 built and released.
-
-## Debugging
-Download the code and run in local VS 2019 to debug.
 
 ## Enhancements
 Possibly:
