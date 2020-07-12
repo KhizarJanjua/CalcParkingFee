@@ -37,14 +37,13 @@ Function level authentication is used.
 
 ![Alt text](/Docs/localURLs.png?raw=true "Local VS2019 enviorement URLs")
 ![Alt text](/Docs/postman_local_call.png?raw=true "Local postman call")
-![Alt text](/Docs/solution_preview.png?raw=true "Local VS2019 solution preview")
 
 ## Build status
 Version 1.0.1 built and released.
 
 ## Enhancements
 Possibly:
- - Tighten the validation
+ - Tighten the input validation
  - Log the exceptions / timeouts
- - tidy up code, espacially date conversions
- - write a small front end app to cosume API
+ - tidy up code, maybe import Special/Normal rates calculation inside main service
+ - write a front end app to cosume API
